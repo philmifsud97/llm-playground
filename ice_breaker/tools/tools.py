@@ -1,11 +1,9 @@
 from langchain.serpapi import SerpAPIWrapper
 
 
-
 class CustomSerpAPIWrapper(SerpAPIWrapper):
     def __init__(self):
         super(CustomSerpAPIWrapper, self).__init__()
-
 
     @staticmethod
     def _process_response(res: dict) -> str:

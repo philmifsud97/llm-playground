@@ -5,7 +5,7 @@ import requests
 def scrape_linkedin_profile(linkedin_profile_url: str):
     """scrape information from Linkedin profiles,
     Manually scrape the information from the Linkedin profile"""
-    
+
     # response = requests.get(
     #     "https://gist.githubusercontent.com/philmifsud97/fc8f9a548c45810f27ee2b928c3ddb9b/raw/5e3bd584f79cb7a615937a4283e37e0e84255466/matthias-grech.json"
     # )

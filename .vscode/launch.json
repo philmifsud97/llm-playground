@@ -2,6 +2,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: RunServer",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ice_breaker/app.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": ".env"
+        },
+        {
             "name": "Ice breaker runner",
             "type": "python",
             "request": "launch",

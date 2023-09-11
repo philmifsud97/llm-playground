@@ -1,7 +1,7 @@
 from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
-from ice_breaker.output_parsers import PersonIntel
+from output_parsers import PersonIntel
 from third_parties.linkedin import scrape_linkedin_profile
 from third_parties.twitter import scrape_user_tweets
 from agents.linkedin_lookup_agent import lookup as linkedin_lookup_agent

@@ -2,6 +2,16 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Intro Vector DB",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/intro-to-vector-db/main.py",
+            "console": "integratedTerminal",
+            "python":"${command:python.interpreterPath}",
+            "justMyCode": true,
+            "envFile": ".env"
+        },
+        {
             "name": "Python: RunServer",
             "type": "python",
             "request": "launch",

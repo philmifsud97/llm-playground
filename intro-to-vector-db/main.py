@@ -1,3 +1,4 @@
+import os
 from langchain import OpenAI
 from langchain.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
@@ -6,7 +7,7 @@ from langchain.vectorstores import Pinecone
 import pinecone
 from langchain.chains import RetrievalQA
 
-pinecone.init(api_key='171668bf-22ce-4e6a-9956-e0036d207b59',environment='gcp-starter')
+pinecone.init()
 
 
 if __name__ == '__main__':
@@ -16,7 +17,7 @@ if __name__ == '__main__':
     loader = TextLoader("intro-to-vector-db\mediumblogs\mediumblog1.txt",encoding='utf-8')
     document = loader.load()
 
-    #text splitter
+    #text splitter, set it into chunks to not hit token limit in LMM
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
     texts = text_splitter.split_documents(document)
     print(len(texts))

@@ -2,6 +2,25 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Documentation Helper",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/documentation-helper/ingestion.py",
+            "console": "integratedTerminal",
+            "python":"${command:python.interpreterPath}",
+            "envFile": ".env"
+        },
+        {
+            "name": "VectorStore in Memory",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/vectorstore-in-memory/main.py",
+            "console": "integratedTerminal",
+            "python":"${command:python.interpreterPath}",
+            "justMyCode": true,
+            "envFile": ".env"
+        },
+        {
             "name": "Intro Vector DB",
             "type": "python",
             "request": "launch",

@@ -1,3 +1,5 @@
 .env
 *.ipynb
 .vectordb_env
+.*_env
+faiss*

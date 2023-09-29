@@ -2,6 +2,16 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Streamlit Runner",
+            "type": "python",
+            "request": "launch",
+            "module": "streamlit",
+            "console": "integratedTerminal",
+            "python":"${command:python.interpreterPath}",
+            "args": ["run","${workspaceFolder}/documentation-helper/main.py"],
+            "envFile": ".env"
+        },
+        {
             "name": "Documentation Helper",
             "type": "python",
             "request": "launch",

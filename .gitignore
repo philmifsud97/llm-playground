@@ -3,3 +3,4 @@
 .vectordb_env
 .*_env
 faiss*
+.streamlit

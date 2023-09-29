@@ -46,4 +46,5 @@ def ingest_docs()->None:
     print('Persisted documents in vector store')
 
 if __name__ == '__main__':
+    #Call the loader to ingest the docs and put them to pinecone as vector embeddings in the vector store
     ingest_docs()

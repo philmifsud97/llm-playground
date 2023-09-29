@@ -16,6 +16,9 @@ pinecone.init(
 )
 
 def run_llm(query: str) -> Any:
+    '''
+        feed the llm with the embeddings and query
+    '''
     embeddings = OpenAIEmbeddings(openai_api_key=os.getenv('OPENAI_API_KEY'))
     docsearch = Pinecone.from_existing_index(
         index_name= INDEX_NAME, embedding= embeddings
@@ -26,5 +29,5 @@ def run_llm(query: str) -> Any:
     return qa({"query":query})
 
 
-if __name__ == "__main__":
-    print(run_llm(query= "What is RetrievalQA chain?"))
+# if __name__ == "__main__":
+#     print(run_llm(query= "What is RetrievalQA chain?"))

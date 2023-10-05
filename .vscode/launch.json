@@ -2,6 +2,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Code Interptreter Runner",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "python":"${command:python.interpreterPath}",
+            "program": "${workspaceFolder}/code-interpreter/main.py",
+            "envFile": ".env"
+        },
+        {
             "name": "Streamlit Runner",
             "type": "python",
             "request": "launch",

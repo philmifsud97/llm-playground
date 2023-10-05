@@ -4,3 +4,5 @@
 .*_env
 faiss*
 .streamlit
+.code-interprter/*
+.code-interprter
